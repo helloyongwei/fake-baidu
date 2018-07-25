@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="default.css">
+  <script src="//at.alicdn.com/t/font_762182_gjvi8kk0f9l.js"></script>
+  <title>模仿百度搜索框</title>
+  <style>
+    .icon {
+      width: 1em; height: 1em;
+      vertical-align: -0.15em;
+      fill: currentColor;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+      <span class="inputWrapper">
+          <input type="text" id="keyword" autocomplete="off">
+          <span class="floatDiv">
+              <svg class="icon">
+                <use xlink:href="#icon-yuyin"></use>
+              </svg>
+              <span class="splitLine">
+              </span>
+              <svg class="icon">
+                  <use xlink:href="#icon-xiangji"></use>
+              </svg>
+          </span>
+      </span>
+      <button>百度一下</button>
+      <ul id="suggestion" class="suggestion">
+        <li>选项1</li>
+        <li>选项2</li>
+        <li>选项3</li>
+        <li>选项4</li>
+      </ul>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
